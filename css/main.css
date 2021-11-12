@@ -41,6 +41,12 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     background-color: #000;
     color: #fcfcfc;
+    cursor: pointer;
+    transition: color .5s ease;
+  }
+
+  .primary-btn:hover {
+    color: #18a360
   }
 
     /* Navigation | Mobile */
@@ -179,6 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   .index-landing-gradient {
     position: absolute;
     background-image:linear-gradient(to bottom, transparent 70%, #000);
+    pointer-events: none;
   }
 
   .index-landing h2, .index-landing p {
@@ -204,6 +211,34 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* Font Sizing | Tablet */
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  /* Buttons | Tablet */
+  .primary-btn {
+    min-width: 40%;
+    padding: .5vh 2vw;
+  }
+
+
     /* Navigation - Tablet */
   .logo {
     margin-left: 5rem;
@@ -221,13 +256,22 @@ h1, h2, h3, h4, h5, h6 {
   .landing-page, .index-landing-gradient {
     height: 60vh;
   }
+
+  .index-landing p {
+    width: 60%;
+    font-size: 1.5em;
+  }
+
+  .index-landing button {
+    margin-top: 5vh;
+  }
 }
 
 
 
 
 /* Desktop */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
 /* Navigation - Desktop */
 .header {
     min-height: 10vh;
