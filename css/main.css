@@ -3,14 +3,47 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 @media only screen and (min-width: 100px)  {
-    /* Navigation - Mobile */
+  /* Font Sizing | Mobile */
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+
+  /* Buttons | Mobile */
+  .primary-btn {
+    min-width: 60%;
+    padding: .5vh 5vw;
+    border-radius: 5px;
+    border: none;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fcfcfc;
+  }
+
+    /* Navigation | Mobile */
   .header {
     width: 100%;
     display: flex;
@@ -21,7 +54,6 @@ h1, h2, h3, h4, h5, h6 {
     position: sticky;
     top: 0;
     z-index: 500;
-    background-color: #000000;
   }
 
   .header-blk {
@@ -49,9 +81,9 @@ h1, h2, h3, h4, h5, h6 {
     top: 10vh;
     left: -100%;
     width: 100%;
-    min-height: 88vh;
+    min-height: 90vh;
     background-color: #111;
-    z-index: 2;
+    z-index: 10;
   }
 
   .nav-list-active {
@@ -67,10 +99,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .nav-list li {
-    opacity: 0;
-  }
-
-  .nav-list li {
     color: #fcfcfc;
     font-family: "Oswald", "Helvetica", sans-serif;
     font-size: 2rem;
@@ -79,6 +107,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 2rem;
     transition: all 0.5s ease;
     cursor: pointer;
+    opacity: 0;
   }
 
   .nav-list li:hover {
@@ -106,16 +135,6 @@ h1, h2, h3, h4, h5, h6 {
 
   .socials {
     display: none;
-    min-width: 20vw;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .socials img {
-    width: 3rem;
-    object-fit: contain;
-    padding: 0.5rem 0.2rem 0 0.2rem;
-    transition: all 0.5s ease;
   }
 
   .socials img:hover {
@@ -133,6 +152,51 @@ h1, h2, h3, h4, h5, h6 {
       transform: translateX(0px);
     }
   }
+
+  /* Landing Page | Mobile */
+  .landing-page, .index-landing-gradient {
+    width: 100vw;
+    height: 92vh;
+    
+  }
+
+  .landing-page {
+    margin-top: -10vh;
+  }
+
+  .index-landing {
+    background-image: url(/img/lambeau-field.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .index-landing-gradient {
+    position: absolute;
+    background-image:linear-gradient(to bottom, transparent 70%, #000);
+  }
+
+  .index-landing h2, .index-landing p {
+    text-shadow: 0 0 8px #000;
+  }
+
+  .index-landing p {
+    width: 80%;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .index-landing button {
+    margin-top: 10vh;
+  }
+
+
+  
 }
 
 
@@ -153,10 +217,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 5rem;
   }
 
-  /* Landing Page - Tablet */
-  .home-landing p {
-    font-size: 2rem;
-    padding: 0 2rem 4rem 2rem;
+  /* Landing Page */
+  .landing-page, .index-landing-gradient {
+    height: 60vh;
   }
 }
 
@@ -164,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Desktop */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
 /* Navigation - Desktop */
 .header {
     min-height: 10vh;
@@ -176,16 +239,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .logo img {
-    height: 9.75vh;
-    padding: 0 0.5rem;
+    height: 9vh;
   }
 
   .socials {
     display: flex;
+    min-width: 20vw;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1vh;
   }
 
   .socials img {
-    width: 2.25rem;
+    width: 2vw;
+    object-fit: contain;
+    transition: all 0.5s ease;
+    margin: 0 .25vw;
   }
 
   .socials img:hover {
@@ -194,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .nav-list {
     position: static;
-    width: 40vw;
+    width: 45vw;
     margin-right: 5rem;
     min-height: 10vh;
     background-color: transparent;
@@ -216,4 +285,14 @@ h1, h2, h3, h4, h5, h6 {
   .menu-btn {
     display: none;
   }
+
+  /* Landing Page */
+  .landing-page, .index-landing-gradient  {
+    height: 100vh;
+  }
+
+  .index-landing {
+    background-position: top;
+  }
+  
 }
