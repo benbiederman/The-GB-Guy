@@ -12,7 +12,34 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+body {
+  background-color: #e8eddc;
+}
+
+.light-background {
+  background-color: #e8eddc;
+}
+
+.dark-background {
+  background-color: #000;
+}
+
 @media only screen and (min-width: 100px)  {
+  /* Transitions | Mobile */
+  .curved {
+    position: relative;
+    height: 2.5vh;
+    width: 100%;
+    border-bottom-left-radius: 50% 90%;
+    border-bottom-right-radius: 50% 90%;
+  }
+
+  .divider {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+  }
+
   /* Font Sizing | Mobile */
   h1 {
     font-size: 2.5rem;
@@ -208,7 +235,6 @@ h1, h2, h3, h4, h5, h6 {
   .assistance-section {
     width: 100%;
     min-height: 60vh;
-    background-color: #000;
     padding: 5vh 0 2.5vh 0;
     text-align: center;
   }
@@ -219,50 +245,98 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
   }
 
-  .lg-container {
+  .content-container {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
 
-  .lg-item {
+  .content-item {
     width: 90%;
     margin: 2.5vh auto;
     background-color: #fcfcfc;
     border-radius: 5px;
     border: none;
     padding-bottom: 1vh;
-    transition: transform 0.1s ease;
+    transition: transform 0.5s ease;
+    text-align: center;
   }
 
-  .lg-item a {
+  .content-item a {
     text-decoration: none;
-    color: #111;
+    color: #000;
   }
 
-  .lg-item img {
+  .content-item img {
     width: 95%;
     margin: 2.5% auto 0 auto;
     border-radius: 5px;
     border: none;
   }
 
-  .lg-item h2 {
+  .content-item h2 {
     font-size: 1.5rem;
   }
 
-  .lg-item p:last-of-type {
+  .content-item p:last-of-type {
     font-size: 1rem;
-    transition: color 0.1s ease;
+    transition: color 0.5s ease;
   }
 
-  .lg-item:hover {
+  .content-item:hover {
     transform: scale(1.01);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .6)
   }
 
-  .lg-item:hover p:last-of-type {
+  .content-item:hover p:last-of-type {
     color: #18a360;
-    text-decoration: underline;
+  }
+
+  .about {
+    width: 100%;
+    min-height: auto;
+    padding: 2.5vh 0;
+  }
+
+  .about-img-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about-img-container img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .about-info-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-info-container h3 {
+    margin: 2.5vh 0;
+  }
+
+  .about-info-container p {
+    margin: 2.5vh 0;
+    font-weight: 200;
+  }
+
+  .about-socials {
+    text-align: center;
+  }
+
+  .about-socials img {
+    width: 5vh;
+    transition: transform 0.5s ease;
+  }
+
+  .about-socials img:hover {
+    transform: scale(1.1);
   }
   
 }
@@ -272,6 +346,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
   /* Font Sizing | Tablet */
   h1 {
     font-size: 3rem;
@@ -333,14 +408,22 @@ h1, h2, h3, h4, h5, h6 {
     margin: 2.5vh auto;
   }
 
-  .lg-container {
+  .content-container {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .lg-item {
+  .content-item {
     width: 45%;
     margin: 2.5vh auto;
+  }
+
+  .about-img-container {
+    width: 50%;
+  }
+
+  .about-info-container {
+    width: 65%;
   }
 }
 
@@ -349,6 +432,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Desktop */
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
+
   /* Font | Desktop */
   h1 {
     font-size: 2.75rem;
@@ -465,13 +549,38 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 5vh;
   }
 
-  .lg-container {
+  .content-container {
     flex-direction: row;
     margin-top: 5vh;
   }
 
-  .lg-item {
+  .content-item {
     width: 30%;
+  }
+
+  .about {
+    display: flex;
+  }
+
+  .about-img-container {
+    width: 40%;
+    text-align: center;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-img-container img {
+    width: 80%;
+  }
+
+  .about-info-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
   }
   
 
