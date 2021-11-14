@@ -203,7 +203,67 @@ h1, h2, h3, h4, h5, h6 {
   .index-landing button {
     margin-top: 10vh;
   }
-  
+
+  /* Index Content | Mobile */
+  .assistance-section {
+    width: 100%;
+    min-height: 60vh;
+    background-color: #000;
+    padding: 5vh 0 2.5vh 0;
+    text-align: center;
+  }
+
+  .assistance-section h3 {
+    color: #fcfcfc;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .lg-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lg-item {
+    width: 90%;
+    margin: 2.5vh auto;
+    background-color: #fcfcfc;
+    border-radius: 5px;
+    border: none;
+    padding-bottom: 1vh;
+    transition: transform 0.1s ease;
+  }
+
+  .lg-item a {
+    text-decoration: none;
+    color: #111;
+  }
+
+  .lg-item img {
+    width: 95%;
+    margin: 2.5% auto 0 auto;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .lg-item h2 {
+    font-size: 1.5rem;
+  }
+
+  .lg-item p:last-of-type {
+    font-size: 1rem;
+    transition: color 0.1s ease;
+  }
+
+  .lg-item:hover {
+    transform: scale(1.01);
+  }
+
+  .lg-item:hover p:last-of-type {
+    color: #18a360;
+    text-decoration: underline;
+  }
   
 }
 
@@ -265,6 +325,22 @@ h1, h2, h3, h4, h5, h6 {
 
   .index-landing button {
     margin-top: 5vh;
+  }
+
+  /* Index Content | Tablet */
+  .assistance-section h3 {
+    width: 50%;
+    margin: 2.5vh auto;
+  }
+
+  .lg-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .lg-item {
+    width: 45%;
+    margin: 2.5vh auto;
   }
 }
 
@@ -383,5 +459,22 @@ h1, h2, h3, h4, h5, h6 {
   .index-landing button {
     margin-top: 7.5vh;
   }
+
+  /* Index Content | Desktop */
+  .assistance-section h3 {
+    margin-top: 5vh;
+  }
+
+  .lg-container {
+    flex-direction: row;
+    margin-top: 5vh;
+  }
+
+  .lg-item {
+    width: 30%;
+  }
+  
+
+  
   
 }
