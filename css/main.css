@@ -170,6 +170,8 @@ body {
     text-align: center;
     margin-right: 1rem;
     cursor: pointer;
+    background-color: transparent;
+    border: none; 
   }
 
   .menu-btn p {
