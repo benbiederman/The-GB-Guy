@@ -34,10 +34,14 @@ body {
     border-bottom-right-radius: 50% 90%;
   }
 
-  .divider {
+  .divider, .alt-divider {
     width: 80%;
     height: 2px;
     margin: 5vh auto;
+  }
+
+  .alt-divider {
+    background-color: #fcfcfc;
   }
 
   /* Font Sizing | Mobile */
@@ -58,7 +62,7 @@ body {
   }
 
   /* Buttons | Mobile */
-  .primary-btn {
+  .primary-btn, .secondary-btn {
     min-width: 60%;
     padding: .5vh 5vw;
     border-radius: 5px;
@@ -66,14 +70,25 @@ body {
     font-family: "Oswald", sans-serif;
     font-size: 1.5em;
     text-transform: uppercase;
-    background-color: #000;
     color: #fcfcfc;
     cursor: pointer;
     transition: color .5s ease;
   }
 
+  .primary-btn {
+    background-color: #000;
+  }
+
   .primary-btn:hover {
     color: #18a360
+  }
+
+  .secondary-btn {
+    background-color: #18a360;
+  }
+
+  .secondary-btn:hover {
+    background-color: #111;
   }
 
     /* Navigation | Mobile */
@@ -184,6 +199,53 @@ body {
       opacity: 1;
       transform: translateX(0px);
     }
+  }
+
+  /* Footer | Mobile */
+  footer {
+    min-height: 8vh;
+    width: 100%;
+    background-color: #000;
+    padding: 2.5vh 0;
+    color: #fcfcfc;
+    text-align: center;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .contact h3 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contact p {
+    width: 80%;
+    margin: 2.5vh auto;
+  }
+
+  .contact-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-btns button {
+    margin: 1.25vh 0;
+  }
+
+  .footer-socials {
+    text-align: center;
+  }
+
+  .footer-socials h3 {
+    margin: 2.5vh auto;
+  }
+
+  .copyright p{
+    margin-top: 5vh;
+    font-size: 1rem;
   }
 
   /* Landing Page | Mobile */
@@ -330,16 +392,16 @@ body {
     font-weight: 200;
   }
 
-  .about-socials {
+  .extra-socials {
     text-align: center;
   }
 
-  .about-socials img {
+  .extra-socials img {
     width: 5vh;
     transition: transform 0.5s ease;
   }
 
-  .about-socials img:hover {
+  .extra-socials img:hover {
     transform: scale(1.1);
   }
 
@@ -361,9 +423,8 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
   /* Transitions | Tablet */
-  .divider {
+  .divider, .alt-divider {
     width: 60%;
-    
   }
 
   /* Font Sizing | Tablet */
@@ -388,7 +449,7 @@ body {
   }
 
   /* Buttons | Tablet */
-  .primary-btn {
+  .primary-btn, .secondary-btn {
     min-width: 40%;
     padding: .5vh 2vw;
   }
@@ -419,6 +480,16 @@ body {
 
   .index-landing button {
     margin-top: 5vh;
+  }
+
+  /* Footer | Tablet */
+
+  .contact p {
+    width: 70%;
+  }
+
+  .copyright p{
+    font-size: 1.25rem;
   }
 
   /* Index Content | Tablet */
@@ -452,7 +523,7 @@ body {
 /* Desktop */
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
   /* Transitions | Desktop */
-  .divider {
+  .divider, .alt-divider {
     width: 40%;
     margin: 5vh auto 5vh auto;
   }
@@ -480,7 +551,7 @@ body {
   }
 
 /* Buttons | Desktop */
-  .primary-btn {
+  .primary-btn, .secondary-btn {
     min-width: 25%;
   }
 
@@ -540,6 +611,44 @@ body {
 
   .menu-btn {
     display: none;
+  }
+
+  /* Footer | Desktop */
+  .footer-nav {
+    display: none;
+  }
+
+
+  .contact h3 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contact p {
+    width: 50%;
+    margin: 2.5vh auto;
+  }
+
+  .contact-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact-btns button {
+    margin: 0 1.25vw;
+  }
+  .footer-socials {
+    text-align: center;
+  }
+
+  .footer-socials h3 {
+    margin: 2.5vh auto;
+  }
+
+  .copyright p{
+    margin-top: 5vh;
+    font-size: 1rem;
   }
 
   /* Landing Page */
