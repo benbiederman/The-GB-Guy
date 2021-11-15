@@ -37,7 +37,7 @@ body {
   .divider {
     width: 80%;
     height: 2px;
-    margin: 0 auto;
+    margin: 5vh auto;
   }
 
   /* Font Sizing | Mobile */
@@ -278,6 +278,10 @@ body {
     font-size: 1.5rem;
   }
 
+  .content-item p:first-of-type {
+    margin-bottom: 1vh;
+  }
+
   .content-item p:last-of-type {
     font-size: 1rem;
     transition: color 0.5s ease;
@@ -295,7 +299,7 @@ body {
   .about {
     width: 100%;
     min-height: auto;
-    padding: 2.5vh 0;
+    padding-top: 5vh;
   }
 
   .about-img-container {
@@ -338,6 +342,15 @@ body {
   .about-socials img:hover {
     transform: scale(1.1);
   }
+
+  .go-to-recommendation {
+    text-align: center;
+  }
+
+  .go-to-recommendation h3 {
+    width: 80%;
+    margin: 0 auto;
+  }
   
 }
 
@@ -346,6 +359,12 @@ body {
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+  /* Transitions | Tablet */
+  .divider {
+    width: 60%;
+    
+  }
 
   /* Font Sizing | Tablet */
   h1 {
@@ -432,6 +451,11 @@ body {
 
 /* Desktop */
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
+  /* Transitions | Desktop */
+  .divider {
+    width: 40%;
+    margin: 5vh auto 5vh auto;
+  }
 
   /* Font | Desktop */
   h1 {
@@ -551,7 +575,8 @@ body {
 
   .content-container {
     flex-direction: row;
-    margin-top: 5vh;
+    margin-top: 2.5vh;
+    flex-wrap: wrap;
   }
 
   .content-item {
@@ -581,8 +606,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-right: 10%;
-  }
-  
+  } 
 
   
   
