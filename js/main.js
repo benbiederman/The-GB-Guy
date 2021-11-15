@@ -1,4 +1,6 @@
 const menu = document.querySelector(".nav-list ul");
+const textBtn = document.querySelector('.text-btn');
+const emailBtn = document.querySelector('.email-btn');
 
 function navSlide() {
   const header = document.querySelector(".header");
@@ -82,6 +84,16 @@ function generateCopyright(){
 
   copyright.innerHTML = `The Green Bay Guy &copy ${year}`
 }
+
+//Text button function
+textBtn.addEventListener('click', () => {
+  window.location.href = "sms:9207703933";
+})
+
+//Email button function
+emailBtn.addEventListener('click', () => {
+  window.location.href= "mailto:thegreenbayguy@gmail.com"
+})
 
 generateCopyright();
 
