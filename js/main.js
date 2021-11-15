@@ -75,4 +75,15 @@ function createNavList(text, src, parent) {
   });
 }
 
+//Adds Copyright in Footer
+function generateCopyright(){
+  const copyright = document.querySelector('.copyright p');
+  let year = new Date().getFullYear();
+
+  copyright.innerHTML = `The Green Bay Guy &copy ${year}`
+}
+
+generateCopyright();
+
 navListMenu();
+
