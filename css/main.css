@@ -16,6 +16,10 @@ body {
   background-color: #e8eddc;
 }
 
+main {
+  min-height: 80vh;
+}
+
 .light-background {
   background-color: #e8eddc;
 }
@@ -102,10 +106,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 500;
-  }
-
-  .header-blk {
-    background-color: #000000;
   }
 
   .header-active {
