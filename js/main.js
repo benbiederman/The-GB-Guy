@@ -1,7 +1,9 @@
 const menu = document.querySelector(".nav-list ul");
 const textBtn = document.querySelector('.text-btn');
 const emailBtn = document.querySelector('.email-btn');
+const headerLogo = document.querySelector('.logo img');
 
+// Navigation Slider for Mobile
 function navSlide() {
   const header = document.querySelector(".header");
   const menuBtn = document.querySelector(".menu-btn");
@@ -76,6 +78,15 @@ function createNavList(text, src, parent) {
     window.location = src;
   });
 }
+
+
+
+// Logo click to Index
+headerLogo.addEventListener('click', () => {
+  window.location.href = "index.html";
+})
+
+
 
 //Adds Copyright in Footer
 function generateCopyright(){
