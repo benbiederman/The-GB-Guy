@@ -17,7 +17,7 @@ body {
 }
 
 main {
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .light-background {
@@ -211,10 +211,6 @@ main {
     padding: 2.5vh 0;
     color: #fcfcfc;
     text-align: center;
-  }
-
-  .footer-nav {
-    display: none;
   }
 
   .contact h3 {
@@ -616,11 +612,6 @@ main {
   }
 
   /* Footer | Desktop */
-  .footer-nav {
-    display: none;
-  }
-
-
   .contact h3 {
     width: 80%;
     margin: 0 auto;
