@@ -30,14 +30,6 @@ main {
 
 @media only screen and (min-width: 100px)  {
   /* Transitions | Mobile */
-  .curved {
-    position: relative;
-    height: 2.5vh;
-    width: 100%;
-    border-bottom-left-radius: 50% 90%;
-    border-bottom-right-radius: 50% 90%;
-  }
-
   .divider, .alt-divider {
     width: 80%;
     height: 2px;
@@ -442,7 +434,7 @@ main {
   }
 
   .lg-option h3 {
-    font-size: 5rem;
+    font-size: 4rem;
     transition: color 0.5s ease;
   }
 
