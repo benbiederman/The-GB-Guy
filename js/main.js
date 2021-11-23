@@ -51,15 +51,15 @@ function navListMenu() {
   const menuOptions = [
     {
       text: "Home",
-      src: "index.html",
+      src: "../index.html",
     },
     {
       text: "Local's Guide",
-      src: "locals-guide.html",
+      src: "../locals-guide.html",
     },
     {
       text: "Podcast",
-      src: "podcast.html",
+      src: "../podcast.html",
     }
   ];
 
