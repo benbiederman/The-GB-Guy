@@ -335,11 +335,8 @@ main {
     font-size: 1.5rem;
   }
 
-  .content-item p:first-of-type {
-    margin-bottom: 1vh;
-  }
-
   .content-item p:last-of-type {
+    margin-top: 1vh;
     font-size: 1rem;
     transition: color 0.5s ease;
   }
@@ -736,7 +733,7 @@ main {
   }
 
   .content-item {
-    width: 30%;
+    width: 24%;
   }
 
   .about {
