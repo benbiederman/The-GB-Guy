@@ -95,7 +95,7 @@ const notByBread = new lgReview(`Not By Bread Alone`, `/img/locals-guide/eat/lun
 const oldMexico = new lgReview(`Old Mexico`, `/img/locals-guide/eat/lunch/old-mexico.jpg`, 4.25, `locals-guide/old-mexico.html`, false, true, false, true, false, false);
 
 const heritageTrail = new lgReview(`Packers Heritage Trail`, `/img/locals-guide/see/heritage-trail.jpg`, null, `locals-guide/packers-heritage-trail.html`, false, false, false, false, false, true);
- 
+
 const rAndDs = new lgReview(`R & D's House Divided`, `/img/locals-guide/eat/lunch/r-and-d-house-divided.jpg`, 3.0, `locals-guide/r-&-d-house-divided.html`, false, true, false, true, false, false);
 
 const rustique = new lgReview(`Rustique Pizzeria`, `/img/locals-guide/eat/lunch/rustique-pizzeria.jpg`, 4.75, `locals-guide/rustique-pizzeria.html`, false, true, false, true, false, false);
@@ -129,3 +129,4 @@ const titletownDistrict = new lgReview(`Titletown District`, `/img/locals-guide/
 const voyageurPark = new lgReview(`Voyageur Park`, `/img/locals-guide/see/voyageur-park.jpg`, null, `locals-guide/voyageur-park.html`, false, false, false, false, false, true);
 
 const zestys = new lgReview(`Zesty's`, `/img/locals-guide/eat/lunch/zestys.jpg`, 4.4, `locals-guide/zestys.html`, false, false, true, false, false, false);
+
