@@ -58,6 +58,10 @@ main {
   }
 
   /* Buttons | Mobile */
+  button {
+    cursor: pointer;
+  }
+
   .primary-btn, .secondary-btn {
     min-width: 60%;
     padding: .5vh 5vw;
@@ -67,7 +71,6 @@ main {
     font-size: 1.5em;
     text-transform: uppercase;
     color: #fcfcfc;
-    cursor: pointer;
     transition: color .5s ease;
   }
 
@@ -625,6 +628,14 @@ main {
     min-height: 21.25vh;
   }
 
+  .search-form {
+    width: 70%;
+  }
+
+  .disclaimer {
+    width: 70%;
+  }
+
 
 }
 
@@ -825,7 +836,7 @@ main {
     margin-right: 10%;
   } 
 
-  /* Local's Guide | Mobile */
+  /* Local's Guide | Desktop */
   .lg-options {
     flex-direction: row;
   }
@@ -838,6 +849,39 @@ main {
   .lg-option h3 {
     font-size: 5rem;
     transition: color 0.5s ease;
+  }
+
+  .search-form {
+    width: 50%;
+  }
+
+  .search-input {
+    width: 90%;
+    padding: .5vh .5vw;
+  }
+
+  .x-btn {
+    right: 10%;
+    width: 5%;
+  }
+
+  .search-btn {
+    width: 10%;
+  }
+
+  .search-btn:hover {
+    color: #18a360;
+  }
+
+  .disclaimer {
+    width: 90%;
+    margin: 1.25vh auto 2.5vh auto;
+    text-align: center;
+  }
+
+  .disclaimer p {
+    font-weight: 100;
+    font-size: 1rem;
   }
 
   
