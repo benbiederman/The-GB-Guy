@@ -1,3 +1,6 @@
+
+// Local's Guide Data
+
 class lgReview {
     constructor(name, img, src, rating, seachTerms) {
         this.name = name;
@@ -12,7 +15,7 @@ const _1919Kitchen = new lgReview(`1919 Kitchen & Tap`, '../img/locals-guide/eat
 
 const aldosPizza = new lgReview(`Aldo's Pizza`, '../img/locals-guide/eat/lunch/aldos-pizza.jpg', '../locals-guide/aldos-pizza.html', 3.9, ["dinner", "pizza", "aldos pizza", "aldo's pizza", "green bay"]);
 
-const alsHamburger = new lgReview(`Al's Hamburger`, '../img/locals-guide/eat/lunch/als-hamburger', '../locals-guide/als-hamburger.html', 4.25, ["lunch", "dinner", "burgers", "als hamburger", "al's hamburger", "green bay"]);
+const alsHamburger = new lgReview(`Al's Hamburger`, '../img/locals-guide/eat/lunch/als-hamburger.jpg', '../locals-guide/als-hamburger.html', 4.25, ["lunch", "dinner", "burgers", "als hamburger", "al's hamburger", "green bay"]);
 
 const anduzzis = new lgReview(`Anduzzi's`, '../img/locals-guide/eat/lunch/anduzzis.jpg', '../locals-guide/anduzzis.html', 4.4, ["lunch", "dinner", "green bay", "howard", "anduzzis", `anduizz's`]);
 
@@ -103,3 +106,54 @@ const theBar = new lgReview(`The Bar`, '../img/locals-guide/eat/lunch/the-bar.jp
 const thePancakePlace = new lgReview(`The Pancake Place`, '../img/locals-guide/eat/breakfast/the-pancake-place.jpg', '../locals-guide/the-pancake-place.html', 4.6, ["breakfast", "lunch", "green bay", "the pancake place", "pancake place"]);
 
 const zestys = new lgReview(`Zesty's`, '../img/locals-guide/eat/lunch/zestys.jpg', '../locals-guide/zestys.html', 4.4, ["lunch", "dinner", "dessert", "howard", "suamico", "allouez", "green bay", "zestys", "zesty's"]);
+
+const items = [_1919Kitchen, aldosPizza, alsHamburger, anduzzis, angelina, basils, bayFamily, blackHoney, blackSheep, brickhouseBurgers, cheeseCakeHeaven, chinaKitchen, copperState, cozumel, driftInn, elMaya, elSarape, fourWayBar, glassNickelPizza, graystoneAleHouse, greenBayDistillery, greenTeaChinese, hagemeisterPark, happyJoes, heartlandPizza, hillTopCafe, jakesPizza, juliesCafe, krollsWest, legendLarrys, luigis, macs, narrowBridge, nicoletCafe, notByBreadAlone, oldMexico, rAndDs, rustique, sammysPizza, sarasArtisanGelato, sgambatis, smartCow, stadiumView, tBaconsBbq, theAbbey, theBar, thePancakePlace, zestys]
+
+function createLocalsGuide(){
+    const localsGuide = items.sort((a, b) => b.rating - a.rating);
+
+    localsGuide.map((item) => {
+        createContentItem(item);
+    })
+
+}
+
+createLocalsGuide()
+
+// Create content item
+function createContentItem(content){
+    console.log(content)
+
+    const contentContainer = document.querySelector('.content-container');
+
+    const contentItem = document.createElement('article');
+    contentItem.className = 'content-item';
+    contentContainer.appendChild(contentItem);
+
+    contentItem.addEventListener('click', () => {
+        window.location.href = content.src;
+    })
+
+    const contentFigure = document.createElement('figure');
+    contentItem.appendChild(contentFigure);
+
+    const contentImg = document.createElement('img');
+    contentImg.src = content.img;
+    contentImg.alt = `${content.name} menu item`;
+    contentFigure.appendChild(contentImg);
+
+    const contentHeader = document.createElement('h2');
+    contentHeader.textContent = content.name;
+    contentItem.appendChild(contentHeader);
+
+    if(content.rating){
+        const contentRating = document.createElement('p');
+        contentRating.textContent = content.rating;
+        contentItem.appendChild(contentRating);
+    }
+
+    const contentLink = document.createElement('p');
+    contentLink.textContent = '- Read More -';
+    contentItem.appendChild(contentLink);
+
+}
