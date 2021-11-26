@@ -79,14 +79,10 @@ function createNavList(text, src, parent) {
   });
 }
 
-
-
 // Logo click to Index
 headerLogo.addEventListener('click', () => {
   window.location.href = "index.html";
 })
-
-
 
 //Adds Copyright in Footer
 function generateCopyright(){
@@ -106,7 +102,7 @@ emailBtn.addEventListener('click', () => {
   window.location.href= "mailto:thegreenbayguy@gmail.com"
 })
 
+navListMenu();
 generateCopyright();
 
-navListMenu();
 
