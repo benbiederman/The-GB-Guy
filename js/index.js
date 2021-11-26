@@ -87,7 +87,7 @@ function createContentItem(content){
 
     if(content.rating){
         const contentRating = document.createElement('p');
-        contentRating.textContent = content.rating;
+        contentRating.textContent = `${content.rating} / 5.0`;
         contentItem.appendChild(contentRating);
     }
 
