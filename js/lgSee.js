@@ -1,24 +1,23 @@
 // Local's Guide Data
 class lgReview {
-    constructor(name, img, imgDesc, src, rating, seachTerms) {
+    constructor(name, img, imgDesc, src, rating, searchTerms) {
         this.name = name;
         this.img = img;
         this.imgDesc = imgDesc;
         this.src = src;
-        this.rating = rating;
-        this.searchTerms = seachTerms;
+        this.searchTerms = searchTerms;
     }
 }
 
-const lambeauField = new lgReview(`Lambeau Field`, `../img/locals-guide/see/lambeau-field.jpg`, `Lambeau Field at night`, '../locals-guide/lambeau-field.html', null, ["lambeau field", "green bay", "free"]);
+const lambeauField = new lgReview(`Lambeau Field`, `../img/locals-guide/see/lambeau-field.jpg`, `Lambeau Field at night`, '../locals-guide/lambeau-field.html', ["lambeau field", "green bay", "free"]);
 
-const heritageTrail = new lgReview(`Packers Heritage Trail`, `../img/locals-guide/see/heritage-trail.jpg`, `Curly Lambeau's house`, '../locals-guide/packers-heritage-trail.html', null, ["packers heritage trail", "heritage trail", "free"]);
+const heritageTrail = new lgReview(`Packers Heritage Trail`, `../img/locals-guide/see/heritage-trail.jpg`, `Curly Lambeau's house`, '../locals-guide/packers-heritage-trail.html', ["packers heritage trail", "heritage trail", "free"]);
 
-const titletownDistrict = new lgReview(`Titletown District`, `../img/locals-guide/see/titletown-district.jpg`, `Titletown District football field`, '../locals-guide/titletown-district.html', null, ["packers titletown district", "titletown district", "green bay", "free"]);
+const titletownDistrict = new lgReview(`Titletown District`, `../img/locals-guide/see/titletown-district.jpg`, `Titletown District football field`, '../locals-guide/titletown-district.html', ["packers titletown district", "titletown district", "green bay", "free"]);
 
-const bayBeach = new lgReview(`Bay Beach`, `../img/locals-guide/see/bay-beach.jpg`, `Zippin Pippin rollercoaster`, '../locals-guide/bay-beach.html', null, ["bay beach", "green bay"]);
+const bayBeach = new lgReview(`Bay Beach`, `../img/locals-guide/see/bay-beach.jpg`, `Zippin Pippin rollercoaster`, '../locals-guide/bay-beach.html', ["bay beach", "green bay"]);
 
-const cityDeck = new lgReview(`CityDeck`, `../img/locals-guide/see/citydeck.jpg`, `CityDeck with a large cargo ship`, '../locals-guide/citydeck.html', null, ["citydeck", "free", "green bay"]);
+const cityDeck = new lgReview(`CityDeck`, `../img/locals-guide/see/citydeck.jpg`, `CityDeck with a large cargo ship`, '../locals-guide/citydeck.html', ["citydeck", "free", "green bay"]);
 
 const items = [lambeauField, heritageTrail, titletownDistrict, bayBeach, cityDeck];
 
@@ -50,12 +49,6 @@ function createContentItem(content){
     const contentHeader = document.createElement('h2');
     contentHeader.textContent = content.name;
     contentItem.appendChild(contentHeader);
-
-    if(content.rating){
-        const contentRating = document.createElement('p');
-        contentRating.textContent = `${content.rating} / 5.0`;
-        contentItem.appendChild(contentRating);
-    }
 
     const contentLink = document.createElement('p');
     contentLink.textContent = '- Read More -';

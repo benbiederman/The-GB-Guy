@@ -1,21 +1,21 @@
 // Local's Guide Data
 class lgReview {
-    constructor(name, img, imgDesc, src, rating) {
+    constructor(name, img, imgDesc, src, searchTerms) {
         this.name = name;
         this.img = img;
         this.imgDesc = imgDesc;
         this.src = src;
-        this.rating = rating;
+        this.searchTerms = searchTerms;
     }
 }
 
-const ticketGuide = new lgReview(`Green Bay Packers Ticket Guide`, '../img/locals-guide/misc/packers-tickets.jpg', `Green Bay Packers tickets`, '../locals-guide/green-bay-packers-ticket-guide.html', null);
+const ticketGuide = new lgReview(`Green Bay Packers Ticket Guide`, '../img/locals-guide/misc/packers-tickets.jpg', `Green Bay Packers tickets`, '../locals-guide/green-bay-packers-ticket-guide.html', ["ticket guide", "packers tickets"]);
 
-const hotelGuide = new lgReview(`Green Bay Hotel Guide`, '../img/locals-guide/misc/green-bay-hotel.jpg', `Lodge Kohler hotel`, '../locals-guide/green-bay-hotel-guide.html', null);
+const hotelGuide = new lgReview(`Green Bay Hotel Guide`, '../img/locals-guide/misc/green-bay-hotel.jpg', `Lodge Kohler hotel`, '../locals-guide/green-bay-hotel-guide.html', ["hotel guide"]);
 
-const parkingGuide = new lgReview(`Lambeau Field Parking Guide`, '../img/locals-guide/misc/lambeau-field-parking.jpg', `Lambeau Field Parking Lot`, '../locals-guide/lambeau-field-parking-guide.html', null);
+const parkingGuide = new lgReview(`Lambeau Field Parking Guide`, '../img/locals-guide/misc/lambeau-field-parking.jpg', `Lambeau Field Parking Lot`, '../locals-guide/lambeau-field-parking-guide.html', ["packers parking", "parking guide", "lambeau field parking"]);
 
-const tailgatingGuide = new lgReview(`Lambeau Field Tailgating Guide`, '../img/locals-guide/misc/lambeau-field-tailgating.jpg', `Grill with hot coals`, '../locals-guide/lambeau-field-tailgating-guide.html', null);
+const tailgatingGuide = new lgReview(`Lambeau Field Tailgating Guide`, '../img/locals-guide/misc/lambeau-field-tailgating.jpg', `Grill with hot coals`, '../locals-guide/lambeau-field-tailgating-guide.html', ["packers tailgating", "tailgating", "lambeau field tailgating"]);
 
 const miscItems = [ticketGuide, hotelGuide, parkingGuide, tailgatingGuide];
 

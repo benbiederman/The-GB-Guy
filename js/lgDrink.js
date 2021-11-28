@@ -1,12 +1,12 @@
 // Local's Guide Data
 class lgReview {
-    constructor(name, img, imgDesc, src, rating, seachTerms) {
+    constructor(name, img, imgDesc, src, rating, searchTerms) {
         this.name = name;
         this.img = img;
         this.imgDesc = imgDesc;
         this.src = src;
         this.rating = rating;
-        this.searchTerms = seachTerms;
+        this.searchTerms = searchTerms;
     }
 }
 
