@@ -74,20 +74,22 @@ const content = [alsHamburger, anduzzis, angelina, basils, blackHoney, blackShee
 
 function generateSuggestion(){
     let suggestions = [];
-    
-    // Generate four random pieces of content, add to suggestions
-    for(let i = 0; i < 4; i++ ){
+
+    // Find four pieces of content unique from current piece of content
+    do {
         let randomNumber = Math.floor(Math.random() * content.length);
-        let suggestion = content.splice((randomNumber), 1);
-        
-        suggestions = [...suggestions, suggestion];
-    }
+        if(content[randomNumber].name === currentHeader.innerHTML){
+            // Checks to make sure it's not the same as the current piece of content shown
+        } else {
+            let suggestion = content.splice((randomNumber), 1);
+            suggestions = [...suggestions, suggestion];
+        }
+    } while (suggestions.length != 4);
 
     // Create content item for each piece of content in suggestions
     for(let i = 0; i < suggestions.length; i++){
         createContentItem(suggestions[i][0])
     }
-    
 }
 
 generateSuggestion();
