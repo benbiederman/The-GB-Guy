@@ -1,3 +1,9 @@
+const searchInput = document.querySelector('.search-input');
+const serachBtn = document.querySelector('.search-btn');
+const contentContainer = document.querySelector('.content-container');
+const xBtn = document.querySelector('.x-btn');
+const searchBtn = document.querySelector('.search-btn');
+
 
 // Local's Guide Data
 class lgReview {
@@ -11,7 +17,7 @@ class lgReview {
     }
 }
 
-const _1919Kitchen = new lgReview(`1919 Kitchen & Tap`, '../img/locals-guide/eat/lunch/1919-kitchen-and-tap.jpg', `1919 Kitchen and Tap burger with fries`,'../locals-guide/1919-kitchen-and-tap.html', 3.5, ["lunch", "dinner", "1919 Kitchen and Tap", "1919 kitchen & tap", "green bay"]);
+const _1919Kitchen = new lgReview(`1919 Kitchen & Tap`, '../img/locals-guide/eat/lunch/1919-kitchen-and-tap.jpg', `1919 Kitchen and Tap burger with fries`,'../locals-guide/1919-kitchen-and-tap.html', 3.5, ["lunch", "dinner", "1919 kitchen and tap", "1919 kitchen & tap", "green bay"]);
 
 const aldosPizza = new lgReview(`Aldo's Pizza`, '../img/locals-guide/eat/lunch/aldos-pizza.jpg', `Aldo's pepperoni pizza`, '../locals-guide/aldos-pizza.html', 3.9, ["dinner", "pizza", "aldos pizza", "aldo's pizza", "green bay"]);
 
@@ -25,7 +31,7 @@ const basils = new lgReview(`Basil's II`, '../img/locals-guide/eat/lunch/basils-
 
 const bayFamily = new lgReview(`Bay Family Restaurant`, '../img/locals-guide/eat/breakfast/bay-family-restaurant.jpg', `Bay Family skillet breakfast`, '../locals-guide/bay-family-restaurant.html', 4.0, ["breakfast", "lunch", "dinner", "green bay", "bay family restaurant"]);
 
-const blackHoney = new lgReview(`Black Honey Hashery`, '../img/locals-guide/eat/breakfast/black-honey-hashery.jpg', `Black Honey Hashery biscuits and gravy`, '../locals-guide/bay-family-restaurant.html', 4.75, ["breakfast", "lunch", "de pere", "black honey hashery"]);
+const blackHoney = new lgReview(`Black Honey Hashery`, '../img/locals-guide/eat/breakfast/black-honey-hashery.jpg', `Black Honey Hashery biscuits and gravy`, '../locals-guide/black-honey-hashery.html', 4.75, ["breakfast", "lunch", "de pere", "black honey hashery"]);
 
 const blackSheep = new lgReview(`Black Sheep Pub & Grill`, '../img/locals-guide/eat/lunch/black-sheep-pub-and-grill.jpg', `Black Sheep burger and fries`, '../locals-guide/basils-ii.html', 4.25, ["lunch", "dinner", "green bay", "black sheep pub and grill", "black sheep pub & grill"]);
 
@@ -55,7 +61,7 @@ const greenBayDistillery = new lgReview(`Green Bay Distillery`, '../img/locals-g
 
 const greenTeaChinese = new lgReview(`Green Tea Chinese`, '../img/locals-guide/eat/lunch/green-tea-chinese.jpg', `Green Tea Chinese sweet and sour chicken`, '../locals-guide/green-tea-chinese.html', 4.3, ["lunch", "dinner", "green bay", "green tea chinese", "chinese"]);
 
-const hagemeisterPark = new lgReview(`Hagemeister Park`, '../img/locals-guide/eat/lunch/hagemeister-park.jpg', `Hagemeister Park chicken carbonara`, '../locals-guide/hagemeister-park.html', 4.3, ["lunch", "dinner", "green bay", "hagemeister park"]);
+const hagemeisterPark = new lgReview(`Hagemeister Park`, '../img/locals-guide/eat/lunch/hagemeister-park.jpg', `Hagemeister Park chicken carbonara`, '../locals-guide/hagemeister-park.html', 3.5, ["lunch", "dinner", "green bay", "hagemeister park"]);
 
 const happyJoes = new lgReview(`Happy Joe's Pizza`, '../img/locals-guide/eat/lunch/happy-joes.jpg', `Happy Joe's pepperoni pizza`, '../locals-guide/happy-joes.html', 3.75, ["lunch", "dinner", "green bay", "happy joe's pizza", "pizza"]);
 
@@ -107,25 +113,26 @@ const thePancakePlace = new lgReview(`The Pancake Place`, '../img/locals-guide/e
 
 const zestys = new lgReview(`Zesty's`, '../img/locals-guide/eat/lunch/zestys.jpg', `Zesty's burger with cheesecurds`, '../locals-guide/zestys.html', 4.4, ["lunch", "dinner", "dessert", "howard", "suamico", "allouez", "green bay", "zestys", "zesty's"]);
 
-const items = [_1919Kitchen, aldosPizza, alsHamburger, anduzzis, angelina, basils, bayFamily, blackHoney, blackSheep, brickhouseBurgers, cheeseCakeHeaven, chinaKitchen, copperState, cozumel, driftInn, elMaya, elSarape, fourWayBar, glassNickelPizza, graystoneAleHouse, greenBayDistillery, greenTeaChinese, hagemeisterPark, happyJoes, heartlandPizza, hillTopCafe, jakesPizza, juliesCafe, krollsWest, legendLarrys, luigis, macs, narrowBridge, nicoletCafe, notByBreadAlone, oldMexico, rAndDs, rustique, sammysPizza, sarasArtisanGelato, sgambatis, smartCow, stadiumView, tBaconsBbq, theAbbey, theBar, thePancakePlace, zestys]
+const content = [_1919Kitchen, aldosPizza, alsHamburger, anduzzis, angelina, basils, bayFamily, blackHoney, blackSheep, brickhouseBurgers, cheeseCakeHeaven, chinaKitchen, copperState, cozumel, driftInn, elMaya, elSarape, fourWayBar, glassNickelPizza, graystoneAleHouse, greenBayDistillery, greenTeaChinese, hagemeisterPark, happyJoes, heartlandPizza, hillTopCafe, jakesPizza, juliesCafe, krollsWest, legendLarrys, luigis, macs, narrowBridge, nicoletCafe, notByBreadAlone, oldMexico, rAndDs, rustique, sammysPizza, sarasArtisanGelato, sgambatis, smartCow, stadiumView, tBaconsBbq, theAbbey, theBar, thePancakePlace, zestys]
+
+// Generate initial content
+createLocalsGuide(content)
 
 
-// Filter items list by rating and create content item for each item
-function createLocalsGuide(){
-    const localsGuide = items.sort((a, b) => b.rating - a.rating);
+// Creates content
+function createLocalsGuide(arr){
+    // Filter content list by rating and create content item for each item
+    const localsGuide = arr.sort((a, b) => b.rating - a.rating);
 
+    // Generate content by filtered list
     localsGuide.map((item) => {
         createContentItem(item);
     })
 
 }
 
-createLocalsGuide()
-
 // Create content item
 function createContentItem(content){
-    const contentContainer = document.querySelector('.content-container');
-
     const contentItem = document.createElement('article');
     contentItem.className = 'content-item';
     contentContainer.appendChild(contentItem);
@@ -156,3 +163,55 @@ function createContentItem(content){
     contentLink.textContent = '- Read More -';
     contentItem.appendChild(contentLink);
 }
+
+// Search Function
+searchInput.addEventListener('input', (e) => {
+    let search = e.target.value;
+    let searchResults = [];
+    xBtn.style.display = 'block';
+
+    if(search.length == 0){
+        contentContainer.innerHTML = '';
+        searchResults = content;
+        createLocalsGuide(searchResults)
+        xBtn.style.display = 'none';
+    } else {
+        content.map((c) => {
+            for(let i = 0; i < c.searchTerms.length; i++ ){
+                if(c.searchTerms[i].toLowerCase().includes(search.toLowerCase())){
+                    searchResults = [...searchResults, {c}.c];
+                }
+            }
+        })
+    }
+
+    // Filter duplicates in array
+    const uniqueResults = [...searchResults.reduce((map, obj) => map.set(obj.name, obj) , new Map()).values()];
+
+    // Check if results, if no result product no result / else create results
+    if( uniqueResults.length === 0 && search.length !== 0) {
+        contentContainer.innerHTML = '';
+        console.log('No results')
+    } else {
+        contentContainer.innerHTML = '';
+        for(let i = 0; i < uniqueResults.length; i++){
+            createContentItem(uniqueResults[i])
+        }
+    }
+
+})
+
+// Prevent refresh upon Go button click
+searchBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+})
+
+xBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    searchInput.value = '';
+    contentContainer.innerHTML = '';
+    xBtn.style.display = 'none';
+    createLocalsGuide(content);
+    
+})
+
