@@ -1,3 +1,10 @@
+const searchInput = document.querySelector('.search-input');
+const serachBtn = document.querySelector('.search-btn');
+const contentContainer = document.querySelector('.content-container');
+const xBtn = document.querySelector('.x-btn');
+const searchBtn = document.querySelector('.search-btn');
+const disclaimer = document.querySelector('.disclaimer');
+
 // Local's Guide Data
 class lgReview {
     constructor(name, img, imgDesc, src, rating, searchTerms) {
@@ -78,24 +85,26 @@ const theBar = new lgReview(`The Bar`, '../img/locals-guide/eat/lunch/the-bar.jp
 
 const theExchange = new lgReview(`The Exchange`, '../img/locals-guide/drink/coffee/the-exchange.jpg', `The Exchange coffee flight`,'../locals-guide/the-exchange.html', 4.15, ["coffee", "the exchange", "de pere"]);
 
-const items = [_1919Kitchen, anduzzis, basils, blackHoney, blackSheep, brickhouseBurgers, copperState, cozumel, driftInn, elMaya, elSarape, fourWayBar, glassNickelPizza, graystoneAleHouse, greenBayDistillery, hagemeisterPark, heartlandPizza, krollsWest, legendLarrys, luigis, lunaCoffee, narrowBridge, nicoletCafe, notByBreadAlone, oldMexico, rAndDs, rustique, sammysPizza, sgambatis, stadiumView, stirUpsBar, theAbbey, theBar, theExchange]
+const content = [_1919Kitchen, anduzzis, basils, blackHoney, blackSheep, brickhouseBurgers, copperState, cozumel, driftInn, elMaya, elSarape, fourWayBar, glassNickelPizza, graystoneAleHouse, greenBayDistillery, hagemeisterPark, heartlandPizza, krollsWest, legendLarrys, luigis, lunaCoffee, narrowBridge, nicoletCafe, notByBreadAlone, oldMexico, rAndDs, rustique, sammysPizza, sgambatis, stadiumView, stirUpsBar, theAbbey, theBar, theExchange]
 
-// Filter items list by rating and create content item for each item
-function createLocalsGuide(){
-    const localsGuide = items.sort((a, b) => b.rating - a.rating);
+// Generate initial content
+createLocalsGuide(content)
 
+
+// Creates content
+function createLocalsGuide(arr){
+    // Filter content list by rating and create content item for each item
+    const localsGuide = arr.sort((a, b) => b.rating - a.rating);
+
+    // Generate content by filtered list
     localsGuide.map((item) => {
         createContentItem(item);
     })
 
 }
 
-createLocalsGuide()
-
 // Create content item
 function createContentItem(content){
-    const contentContainer = document.querySelector('.content-container');
-
     const contentItem = document.createElement('article');
     contentItem.className = 'content-item';
     contentContainer.appendChild(contentItem);
@@ -126,3 +135,77 @@ function createContentItem(content){
     contentLink.textContent = '- Read More -';
     contentItem.appendChild(contentLink);
 }
+
+// Create Null Search Results
+function noResults(){
+    const noResultsSection = document.createElement('div');
+    noResultsSection.className = 'null-search';
+    contentContainer.appendChild(noResultsSection);
+
+    const header = document.createElement('p');
+    header.textContent = "Ope.";
+    noResultsSection.appendChild(header);
+
+    const p1 = document.createElement('p');
+    p1.textContent = "Your search results came back about as empty as the trophy case in U.S. Bank Stadium.";
+    noResultsSection.appendChild(p1);
+
+    const p2 = document.createElement('p');
+    p2.textContent = "Please adjust your search";
+    noResultsSection.appendChild(p2);
+
+}
+
+// Search Function
+searchInput.addEventListener('input', (e) => {
+    let search = e.target.value;
+    let searchResults = [];
+    xBtn.style.display = 'block';
+
+    if(search.length == 0){
+        contentContainer.innerHTML = '';
+        disclaimer.style.display = 'block';
+        searchResults = content;
+        createLocalsGuide(searchResults)
+        xBtn.style.display = 'none';
+    } else {
+        content.map((c) => {
+            for(let i = 0; i < c.searchTerms.length; i++ ){
+                if(c.searchTerms[i].toLowerCase().includes(search.toLowerCase())){
+                    searchResults = [...searchResults, {c}.c];
+                }
+            }
+        })
+    }
+
+    // Filter duplicates in array
+    const uniqueResults = [...searchResults.reduce((map, obj) => map.set(obj.name, obj) , new Map()).values()];
+
+    // Check if results, if no result product no result / else create results
+    if( uniqueResults.length === 0 && search.length !== 0) {
+        contentContainer.innerHTML = '';
+        disclaimer.style.display = 'none';
+        noResults()
+    } else {
+        contentContainer.innerHTML = '';
+        disclaimer.style.display = 'block';
+        for(let i = 0; i < uniqueResults.length; i++){
+            createContentItem(uniqueResults[i])
+        }
+    }
+
+})
+
+// Prevent refresh upon Go button click
+searchBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+})
+
+xBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    searchInput.value = '';
+    disclaimer.style.display = 'block';
+    contentContainer.innerHTML = '';
+    xBtn.style.display = 'none';
+    createLocalsGuide(content);
+})
