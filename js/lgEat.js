@@ -237,6 +237,5 @@ xBtn.addEventListener('click', (e) => {
     contentContainer.innerHTML = '';
     xBtn.style.display = 'none';
     createLocalsGuide(content);
-    
 })
 
