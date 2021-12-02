@@ -3,6 +3,7 @@ const serachBtn = document.querySelector('.search-btn');
 const contentContainer = document.querySelector('.content-container');
 const xBtn = document.querySelector('.x-btn');
 const searchBtn = document.querySelector('.search-btn');
+const disclaimer = document.querySelector('.disclaimer');
 
 
 // Local's Guide Data
@@ -164,6 +165,26 @@ function createContentItem(content){
     contentItem.appendChild(contentLink);
 }
 
+// Create Null Search Results
+function noResults(){
+    const noResultsSection = document.createElement('div');
+    noResultsSection.className = 'null-search';
+    contentContainer.appendChild(noResultsSection);
+
+    const header = document.createElement('p');
+    header.textContent = "Ope.";
+    noResultsSection.appendChild(header);
+
+    const p1 = document.createElement('p');
+    p1.textContent = "Your search results came back about as empty as the trophy case in U.S. Bank Stadium.";
+    noResultsSection.appendChild(p1);
+
+    const p2 = document.createElement('p');
+    p2.textContent = "Please adjust your search";
+    noResultsSection.appendChild(p2);
+
+}
+
 // Search Function
 searchInput.addEventListener('input', (e) => {
     let search = e.target.value;
@@ -172,6 +193,7 @@ searchInput.addEventListener('input', (e) => {
 
     if(search.length == 0){
         contentContainer.innerHTML = '';
+        disclaimer.style.display = 'block';
         searchResults = content;
         createLocalsGuide(searchResults)
         xBtn.style.display = 'none';
@@ -191,9 +213,11 @@ searchInput.addEventListener('input', (e) => {
     // Check if results, if no result product no result / else create results
     if( uniqueResults.length === 0 && search.length !== 0) {
         contentContainer.innerHTML = '';
-        console.log('No results')
+        disclaimer.style.display = 'none';
+        noResults()
     } else {
         contentContainer.innerHTML = '';
+        disclaimer.style.display = 'block';
         for(let i = 0; i < uniqueResults.length; i++){
             createContentItem(uniqueResults[i])
         }
@@ -209,6 +233,7 @@ searchBtn.addEventListener('click', (e) => {
 xBtn.addEventListener('click', (e) => {
     e.preventDefault();
     searchInput.value = '';
+    disclaimer.style.display = 'block';
     contentContainer.innerHTML = '';
     xBtn.style.display = 'none';
     createLocalsGuide(content);
