@@ -1,6 +1,6 @@
 const eatBtn = document.querySelector('.eat-option');
 const drinkBtn = document.querySelector('.drink-option');
-const seeBtn = document.querySelector('.see-option');
+const doBtn = document.querySelector('.do-option');
 const miscBtn = document.querySelector('.misc-option');
 
 eatBtn.addEventListener('click', () => {
@@ -11,8 +11,8 @@ drinkBtn.addEventListener('click', () => {
     window.location.href = "/locals-guide/drink.html";
 })
 
-seeBtn.addEventListener('click', () => {
-    window.location.href = "/locals-guide/see.html";
+doBtn.addEventListener('click', () => {
+    window.location.href = "/locals-guide/do.html";
 })
 
 miscBtn.addEventListener('click', () => {
