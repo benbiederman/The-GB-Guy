@@ -590,6 +590,8 @@ main {
     padding: .5vh 2vw;
     border-radius: 5px;
     margin-top: 3.75vh;
+    box-shadow: 0px 0px 10px #111;
+    border: none;
   }
 
   .content-rating p {
@@ -612,6 +614,27 @@ main {
     color: #BD8B28;
   }
 
+  .tip {
+    width: 100%;
+    background-color: #000;
+    margin: 2.5vh auto;
+    color: #fcfcfc;
+    text-align: center;
+    padding: 2.5vh 5vw;
+  }
+
+  .tip p:first-child {
+    margin-top: 1.25vh;
+  }
+
+  .tip p:nth-child(2) {
+    margin: 2.5vh auto;
+  }
+
+  .tip button {
+    margin: 2.5vh auto;
+  }
+
   .content-information {
     text-align: center;
   }
@@ -625,8 +648,12 @@ main {
     display: none;
   }
 
+  .location-information h1 {
+    font-size: 1.75rem;
+  }
+
   .location-hours {
-    margin: 1.25vh auto;
+    margin: 5vh auto;
   }
 
   .location-hours ul {
@@ -768,8 +795,6 @@ main {
     flex-wrap: wrap;
   }
 
-  
-
   .content-item {
     width: 45%;
     margin: 2.5vh auto;
@@ -810,6 +835,11 @@ main {
     min-height: 5vw;
     min-width: 5vw;
   }
+
+  .tip {
+    padding: 2.5vh 20vw;
+  }
+
 
    /* No Search Results - Tablet */
    .null-search {
@@ -1102,7 +1132,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 2.5%;
+    padding-right: 1%;
 
   }
 
@@ -1119,7 +1149,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 2.5%;
+    padding-left: 1%;
   }
 
   .location-information h1 {
