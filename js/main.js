@@ -81,7 +81,7 @@ function createNavList(text, src, parent) {
 
 // Logo click to Index
 headerLogo.addEventListener('click', () => {
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 })
 
 //Adds Copyright in Footer
