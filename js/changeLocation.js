@@ -3,8 +3,11 @@ const backBtn = document.querySelector('.back-btn');
 const nextBtn = document.querySelector('.next-btn');
 
 let active = 0;
+backBtn.textContent = "<";
+nextBtn.textContent = ">"
 
 function filterLocations(index){
+    
     locations.forEach((location) => {
         location.style.display = 'none';
     })
