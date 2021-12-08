@@ -34,7 +34,7 @@ const bayFamily = new lgReview(`Bay Family Restaurant`, '../img/locals-guide/eat
 
 const blackHoney = new lgReview(`Black Honey Hashery`, '../img/locals-guide/eat/breakfast/black-honey-hashery.jpg', `Black Honey Hashery biscuits and gravy`, '../locals-guide/black-honey-hashery.html', 4.75, ["breakfast", "lunch", "de pere", "black honey hashery"]);
 
-const blackSheep = new lgReview(`Black Sheep Pub & Grill`, '../img/locals-guide/eat/lunch/black-sheep-pub-and-grill.jpg', `Black Sheep burger and fries`, '../locals-guide/basils-ii.html', 4.25, ["lunch", "dinner", "green bay", "black sheep pub and grill", "black sheep pub & grill"]);
+const blackSheep = new lgReview(`Black Sheep Pub & Grill`, '../img/locals-guide/eat/lunch/black-sheep-pub-and-grill.jpg', `Black Sheep burger and fries`, '../locals-guide/black-sheep.html', 4.25, ["lunch", "dinner", "green bay", "black sheep pub and grill", "black sheep pub & grill"]);
 
 const brickhouseBurgers = new lgReview(`Brickhouse Craft Burgers`, '../img/locals-guide/eat/lunch/brickhouse-craft-burgers.jpg', `Brickhouse cheese burger with fries`, '../locals-guide/brickhouse-craft-burgers.html', 4.0, ["lunch", "dinner", "de pere", "brickhouse burgers", "brick house"]);
 
