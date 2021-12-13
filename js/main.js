@@ -73,10 +73,17 @@ function createNavList(text, src, parent) {
   const li = document.createElement("li");
   li.textContent = text;
   parent.appendChild(li);
+  li.tabIndex = 0;
 
   li.addEventListener("click", () => {
     window.location = src;
   });
+
+  li.addEventListener('keypress', (e) => {
+    if(e.key === "Enter"){
+      window.location = src;
+    }
+  })
 }
 
 // Logo click to Index

@@ -100,9 +100,16 @@ function createContentItem(content){
     const contentItem = document.createElement('article');
     contentItem.className = 'content-item';
     contentContainer.appendChild(contentItem);
+    contentItem.tabIndex = 0;
 
     contentItem.addEventListener('click', () => {
         window.location.href = content.src;
+    })
+
+    contentItem.addEventListener('keypress', (e) => {
+        if(e.key === "Enter"){
+            window.location.href = content.src;
+        }        
     })
 
     const contentFigure = document.createElement('figure');
