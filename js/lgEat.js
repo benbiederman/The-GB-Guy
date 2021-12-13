@@ -78,7 +78,9 @@ const krolls = new lgReview(`Kroll's`, '../img/locals-guide/eat/lunch/krolls-wes
 
 const legendLarrys = new lgReview(`Legend Larry's`, '../img/locals-guide/eat/lunch/legend-larrys.jpg', `Legend Larry's DOA wings`, '../locals-guide/legend-larrys.html', 4.75, ["lunch", "dinner", "green bay", "legend larrys", "legend larry's", "wings"]);
 
-const luigis = new lgReview(`Luigi's Pizza Palace`, '../img/locals-guide/eat/lunch/luigis-pizza.jpg', `Luigi's Pizza Palace pepperoni pizza`, '../locals-guide/luigis-pizza-palace.html', 4.4, ["lunch", "dinner", "green bay", "suamico", "luigis pizza palace", "luigi's pizza palace", "pizza"]);
+const luigisBistro = new lgReview(`Luigi's Italian Bistro`, '../img/locals-guide/eat/lunch/luigis-italian-bistro.jpg', `Luigi's Italian Bistro pepperoni pizza`, '../locals-guide/luigis-italian-bistro.html', 4.4, ["alcohol", "green bay", "luigis italian bistro", "luigi's italian bistro", "pizza"]);
+
+const luigis = new lgReview(`Luigi's Pizza Palace II`, '../img/locals-guide/eat/lunch/luigis-pizza.jpg', `Luigi's Pizza Palace pepperoni pizza`, '../locals-guide/luigis-pizza-palace-ii.html', 4.4, ["lunch", "dinner", "green bay", "suamico", "luigis pizza palace", "luigi's pizza palace", "pizza"]);
 
 const macs = new lgReview(`Macs`, '../img/locals-guide/eat/lunch/macs-mac-n-cheese-shop.jpg', `MACS loaded baked potato mac n cheese`, '../locals-guide/macs.html', 4.5, ["lunch", "dinner", "green bay", "macaroni and cheese shop", "macs"]);
 
@@ -114,7 +116,7 @@ const thePancakePlace = new lgReview(`The Pancake Place`, '../img/locals-guide/e
 
 const zestys = new lgReview(`Zesty's`, '../img/locals-guide/eat/lunch/zestys.jpg', `Zesty's burger with cheesecurds`, '../locals-guide/zestys.html', 4.4, ["lunch", "dinner", "dessert", "howard", "suamico", "allouez", "green bay", "zestys", "zesty's"]);
 
-const content = [_1919Kitchen, aldosPizza, alsHamburger, anduzzis, angelina, basils, bayFamily, blackHoney, blackSheep, brickhouseBurgers, cheeseCakeHeaven, chinaKitchen, copperState, cozumel, driftInn, elMaya, elSarape, fourWayBar, glassNickelPizza, graystoneAleHouse, greenBayDistillery, greenTeaChinese, hagemeisterPark, happyJoes, heartlandPizza, hillTopCafe, jakesPizza, juliesCafe, krolls, legendLarrys, luigis, macs, narrowBridge, nicoletCafe, notByBreadAlone, oldMexico, rAndDs, rustique, sammysPizza, sarasArtisanGelato, sgambatis, smartCow, stadiumView, tBaconsBbq, theAbbey, theBar, thePancakePlace, zestys]
+const content = [_1919Kitchen, aldosPizza, alsHamburger, anduzzis, angelina, basils, bayFamily, blackHoney, blackSheep, brickhouseBurgers, cheeseCakeHeaven, chinaKitchen, copperState, cozumel, driftInn, elMaya, elSarape, fourWayBar, glassNickelPizza, graystoneAleHouse, greenBayDistillery, greenTeaChinese, hagemeisterPark, happyJoes, heartlandPizza, hillTopCafe, jakesPizza, juliesCafe, krolls, legendLarrys, luigisBistro, luigis, macs, narrowBridge, nicoletCafe, notByBreadAlone, oldMexico, rAndDs, rustique, sammysPizza, sarasArtisanGelato, sgambatis, smartCow, stadiumView, tBaconsBbq, theAbbey, theBar, thePancakePlace, zestys]
 
 // Generate initial content
 createLocalsGuide(content)

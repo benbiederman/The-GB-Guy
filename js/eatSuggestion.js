@@ -46,7 +46,9 @@ const juliesCafe = new lgReview(`Julie's Cafe`, '../img/locals-guide/eat/breakfa
 
 const legendLarrys = new lgReview(`Legend Larry's`, '../img/locals-guide/eat/lunch/legend-larrys.jpg', `Legend Larry's DOA wings`, '../locals-guide/legend-larrys.html', 4.75);
 
-const luigis = new lgReview(`Luigi's Pizza Palace`, '../img/locals-guide/eat/lunch/luigis-pizza.jpg', `Luigi's Pizza Palace pepperoni pizza`, '../locals-guide/luigis-pizza-palace.html', 4.4);
+const luigisBistro = new lgReview(`Luigi's Italian Bistro`, '../img/locals-guide/eat/lunch/luigis-italian-bistro.jpg', `Luigi's Italian Bistro pepperoni pizza`, '../locals-guide/luigis-italian-bistro.html', 4.4);
+
+const luigis = new lgReview(`Luigi's Pizza Palace II`, '../img/locals-guide/eat/lunch/luigis-pizza.jpg', `Luigi's Pizza Palace pepperoni pizza`, '../locals-guide/luigis-pizza-palace-ii.html', 4.4);
 
 const macs = new lgReview(`Macs`, '../img/locals-guide/eat/lunch/macs-mac-n-cheese-shop.jpg', `MACS loaded baked potato mac n cheese`, '../locals-guide/macs.html', 4.5);
 
@@ -70,7 +72,7 @@ const thePancakePlace = new lgReview(`The Pancake Place`, '../img/locals-guide/e
 
 const zestys = new lgReview(`Zesty's`, '../img/locals-guide/eat/lunch/zestys.jpg', `Zesty's burger with cheesecurds`, '../locals-guide/zestys.html', 4.4);
 
-const content = [alsHamburger, anduzzis, angelina, basils, blackHoney, blackSheep, chinaKitchen, copperState, cozumel, driftInn, elSarape, greenBayDistillery, greenTeaChinese, heartlandPizza, hillTopCafe, juliesCafe, legendLarrys, luigis, macs, narrowBridge, notByBreadAlone, oldMexico, rustique, sammysPizza, sarasArtisanGelato, sgambatis, stadiumView, thePancakePlace, zestys];
+const content = [alsHamburger, anduzzis, angelina, basils, blackHoney, blackSheep, chinaKitchen, copperState, cozumel, driftInn, elSarape, greenBayDistillery, greenTeaChinese, heartlandPizza, hillTopCafe, juliesCafe, legendLarrys, luigisBistro, luigis, macs, narrowBridge, notByBreadAlone, oldMexico, rustique, sammysPizza, sarasArtisanGelato, sgambatis, stadiumView, thePancakePlace, zestys];
 
 function generateSuggestion(){
     let suggestions = [];
