@@ -88,7 +88,7 @@ const narrowBridge = new lgReview(`Narrow Bridge`, '../img/locals-guide/eat/lunc
 
 const nicoletCafe = new lgReview(`Nicolet Cafe`, '../img/locals-guide/eat/breakfast/nicolet-cafe.jpg', `Nicolet Cafe french toast and hashbrowns`, '../locals-guide/nicolet-cafe.html', 3.75, ["breakfast", "lunch", "dinner", "de pere", "nicolet cafe"]);
 
-const notByBreadAlone = new lgReview(`Not By Bread Alone`, '../img/locals-guide/eat/lunch/not-by-bread-alone.jpg', `Not By Bread Alone turkey sandwich`, '../locals-guide/not-by-bread-alone.html', 4.4, ["lunch", "green bay"]);
+const notByBreadAlone = new lgReview(`Not By Bread Alone`, '../img/locals-guide/eat/lunch/not-by-bread-alone.jpg', `Not By Bread Alone turkey sandwich`, '../locals-guide/not-by-bread-alone.html', 4.4, ["lunch", "green bay", "not by bread alone"]);
 
 const oldMexico = new lgReview(`Old Mexico`, '../img/locals-guide/eat/lunch/old-mexico.jpg', `Old Mexico enchiladas`, '../locals-guide/old-mexico.html', 4.25, ["lunch", "dinner", "mexican", "suamico"]);
 
