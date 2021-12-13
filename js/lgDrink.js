@@ -53,7 +53,7 @@ const hagemeisterPark = new lgReview(`Hagemeister Park`, '../img/locals-guide/ea
 
 const heartlandPizza = new lgReview(`Heartland Pizza`, '../img/locals-guide/eat/lunch/heartland-pizza.jpg', `Heartland Pizza's pepperoni pizza`, '../locals-guide/heartland-pizza.html', 4.75, ["alcohol", "green bay", "heartland pizza", "pizza"]);
 
-const krollsWest = new lgReview(`Kroll's West`, '../img/locals-guide/eat/lunch/krolls-west.jpg', `Kroll's cheesecurds`, '../locals-guide/krolls-west.html', 3.75, ["alcohol", "krolls west", "kroll's west"]);
+const krolls = new lgReview(`Kroll's`, '../img/locals-guide/eat/lunch/krolls-west.jpg', `Kroll's cheesecurds`, '../locals-guide/krolls.html', 3.75, ["alcohol", "krolls west", "kroll's west"]);
 
 const legendLarrys = new lgReview(`Legend Larry's`, '../img/locals-guide/eat/lunch/legend-larrys.jpg', `Legend Larry's DOA wings`, '../locals-guide/legend-larrys.html', 4.75, ["alcohol", "green bay", "legend larrys", "legend larry's", "wings"]);
 
@@ -87,7 +87,7 @@ const theBar = new lgReview(`The Bar`, '../img/locals-guide/eat/lunch/the-bar.jp
 
 const theExchange = new lgReview(`The Exchange`, '../img/locals-guide/drink/coffee/the-exchange.jpg', `The Exchange coffee flight`,'../locals-guide/the-exchange.html', 4.15, ["coffee", "the exchange", "de pere"]);
 
-const content = [_1919Kitchen, anduzzis, basils, blackHoney, blackSheep, brickhouseBurgers, copperState, cozumel, dailyBuzz, driftInn, elMaya, elSarape, fourWayBar, glassNickelPizza, graystoneAleHouse, greenBayDistillery, hagemeisterPark, heartlandPizza, krollsWest, legendLarrys, luigis, lunaCoffee, narrowBridge, nicoletCafe, notByBreadAlone, oldMexico, rAndDs, rustique, sammysPizza, sgambatis, stadiumView, stirUpsBar, theAbbey, theBar, theExchange]
+const content = [_1919Kitchen, anduzzis, basils, blackHoney, blackSheep, brickhouseBurgers, copperState, cozumel, dailyBuzz, driftInn, elMaya, elSarape, fourWayBar, glassNickelPizza, graystoneAleHouse, greenBayDistillery, hagemeisterPark, heartlandPizza, krolls, legendLarrys, luigis, lunaCoffee, narrowBridge, nicoletCafe, notByBreadAlone, oldMexico, rAndDs, rustique, sammysPizza, sgambatis, stadiumView, stirUpsBar, theAbbey, theBar, theExchange]
 
 // Generate initial content
 createLocalsGuide(content)

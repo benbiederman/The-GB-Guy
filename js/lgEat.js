@@ -74,7 +74,7 @@ const jakesPizza = new lgReview(`Jake's Pizza`, '../img/locals-guide/eat/lunch/j
 
 const juliesCafe = new lgReview(`Julie's Cafe`, '../img/locals-guide/eat/breakfast/julies-cafe.jpg', `Julie's Cafe pancakes`, '../locals-guide/julies-cafe.html', 4.3, ["breakfast", "lunch", "green bay", "de pere", "julie's cafe", "julies cafe"]);
 
-const krollsWest = new lgReview(`Kroll's West`, '../img/locals-guide/eat/lunch/krolls-west.jpg', `Kroll's cheesecurds`, '../locals-guide/krolls-west.html', 3.75, ["lunch", "green bay", "krolls west", "kroll's west"]);
+const krolls = new lgReview(`Kroll's`, '../img/locals-guide/eat/lunch/krolls-west.jpg', `Kroll's cheesecurds`, '../locals-guide/krolls.html', 3.75, ["lunch", "green bay", "krolls west", "kroll's west"]);
 
 const legendLarrys = new lgReview(`Legend Larry's`, '../img/locals-guide/eat/lunch/legend-larrys.jpg', `Legend Larry's DOA wings`, '../locals-guide/legend-larrys.html', 4.75, ["lunch", "dinner", "green bay", "legend larrys", "legend larry's", "wings"]);
 
@@ -114,7 +114,7 @@ const thePancakePlace = new lgReview(`The Pancake Place`, '../img/locals-guide/e
 
 const zestys = new lgReview(`Zesty's`, '../img/locals-guide/eat/lunch/zestys.jpg', `Zesty's burger with cheesecurds`, '../locals-guide/zestys.html', 4.4, ["lunch", "dinner", "dessert", "howard", "suamico", "allouez", "green bay", "zestys", "zesty's"]);
 
-const content = [_1919Kitchen, aldosPizza, alsHamburger, anduzzis, angelina, basils, bayFamily, blackHoney, blackSheep, brickhouseBurgers, cheeseCakeHeaven, chinaKitchen, copperState, cozumel, driftInn, elMaya, elSarape, fourWayBar, glassNickelPizza, graystoneAleHouse, greenBayDistillery, greenTeaChinese, hagemeisterPark, happyJoes, heartlandPizza, hillTopCafe, jakesPizza, juliesCafe, krollsWest, legendLarrys, luigis, macs, narrowBridge, nicoletCafe, notByBreadAlone, oldMexico, rAndDs, rustique, sammysPizza, sarasArtisanGelato, sgambatis, smartCow, stadiumView, tBaconsBbq, theAbbey, theBar, thePancakePlace, zestys]
+const content = [_1919Kitchen, aldosPizza, alsHamburger, anduzzis, angelina, basils, bayFamily, blackHoney, blackSheep, brickhouseBurgers, cheeseCakeHeaven, chinaKitchen, copperState, cozumel, driftInn, elMaya, elSarape, fourWayBar, glassNickelPizza, graystoneAleHouse, greenBayDistillery, greenTeaChinese, hagemeisterPark, happyJoes, heartlandPizza, hillTopCafe, jakesPizza, juliesCafe, krolls, legendLarrys, luigis, macs, narrowBridge, nicoletCafe, notByBreadAlone, oldMexico, rAndDs, rustique, sammysPizza, sarasArtisanGelato, sgambatis, smartCow, stadiumView, tBaconsBbq, theAbbey, theBar, thePancakePlace, zestys]
 
 // Generate initial content
 createLocalsGuide(content)
