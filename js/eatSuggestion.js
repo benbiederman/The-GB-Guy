@@ -38,8 +38,6 @@ const greenBayDistillery = new lgReview(`Green Bay Distillery`, '../img/locals-g
 
 const greenTeaChinese = new lgReview(`Green Tea Chinese`, '../img/locals-guide/eat/lunch/green-tea-chinese.jpg', `Green Tea Chinese sweet and sour chicken`, '../locals-guide/green-tea-chinese.html', 4.3);
 
-const heartlandPizza = new lgReview(`Heartland Pizza`, '../img/locals-guide/eat/lunch/heartland-pizza.jpg', `Heartland Pizza's pepperoni pizza`, '../locals-guide/heartland-pizza.html', 4.75);
-
 const hillTopCafe = new lgReview(`Hill Top Cafe`, '../img/locals-guide/eat/lunch/hilltop-cafe.jpg', `Hill Top Cafe cheeseburger and fries`, '../locals-guide/hill-top-cafe.html', 4.4);
 
 const juliesCafe = new lgReview(`Julie's Cafe`, '../img/locals-guide/eat/breakfast/julies-cafe.jpg', `Julie's Cafe pancakes`, '../locals-guide/julies-cafe.html', 4.3);
@@ -72,7 +70,7 @@ const thePancakePlace = new lgReview(`The Pancake Place`, '../img/locals-guide/e
 
 const zestys = new lgReview(`Zesty's`, '../img/locals-guide/eat/lunch/zestys.jpg', `Zesty's burger with cheesecurds`, '../locals-guide/zestys.html', 4.4);
 
-const content = [alsHamburger, anduzzis, angelina, basils, blackHoney, blackSheep, chinaKitchen, copperState, cozumel, driftInn, elSarape, greenBayDistillery, greenTeaChinese, heartlandPizza, hillTopCafe, juliesCafe, legendLarrys, luigisBistro, luigis, macs, narrowBridge, notByBreadAlone, oldMexico, rustique, sammysPizza, sarasArtisanGelato, sgambatis, stadiumView, thePancakePlace, zestys];
+const content = [alsHamburger, anduzzis, angelina, basils, blackHoney, blackSheep, chinaKitchen, copperState, cozumel, driftInn, elSarape, greenBayDistillery, greenTeaChinese, hillTopCafe, juliesCafe, legendLarrys, luigisBistro, luigis, macs, narrowBridge, notByBreadAlone, oldMexico, rustique, sammysPizza, sarasArtisanGelato, sgambatis, stadiumView, thePancakePlace, zestys];
 
 function generateSuggestion(){
     let suggestions = [];

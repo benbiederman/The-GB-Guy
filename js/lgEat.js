@@ -66,8 +66,6 @@ const hagemeisterPark = new lgReview(`Hagemeister Park`, '../img/locals-guide/ea
 
 const happyJoes = new lgReview(`Happy Joe's Pizza`, '../img/locals-guide/eat/lunch/happy-joes.jpg', `Happy Joe's pepperoni pizza`, '../locals-guide/happy-joes.html', 3.75, ["lunch", "dinner", "green bay", "happy joe's pizza", "pizza"]);
 
-const heartlandPizza = new lgReview(`Heartland Pizza`, '../img/locals-guide/eat/lunch/heartland-pizza.jpg', `Heartland Pizza's pepperoni pizza`, '../locals-guide/heartland-pizza.html', 4.75, ["lunch", "dinner", "green bay", "heartland pizza", "pizza"]);
-
 const hillTopCafe = new lgReview(`Hill Top Cafe`, '../img/locals-guide/eat/lunch/hilltop-cafe.jpg', `Hill Top Cafe cheeseburger and fries`, '../locals-guide/hill-top-cafe.html', 4.4, ["lunch", "dinner", "green bay", "hill top cafe", "hilltop cafe"]);
 
 const jakesPizza = new lgReview(`Jake's Pizza`, '../img/locals-guide/eat/lunch/jakes-pizza.jpg', `Jake's pepperoni pizza`, '../locals-guide/jakes-pizza.html', 3.75, ["dinner", "green bay", "jakes pizza", "jake's pizza", "pizza"]);
@@ -90,7 +88,7 @@ const nicoletCafe = new lgReview(`Nicolet Cafe`, '../img/locals-guide/eat/breakf
 
 const notByBreadAlone = new lgReview(`Not By Bread Alone`, '../img/locals-guide/eat/lunch/not-by-bread-alone.jpg', `Not By Bread Alone turkey sandwich`, '../locals-guide/not-by-bread-alone.html', 4.4, ["lunch", "green bay", "not by bread alone"]);
 
-const oldMexico = new lgReview(`Old Mexico`, '../img/locals-guide/eat/lunch/old-mexico.jpg', `Old Mexico enchiladas`, '../locals-guide/old-mexico.html', 4.25, ["lunch", "dinner", "mexican", "suamico"]);
+const oldMexico = new lgReview(`Old Mexico`, '../img/locals-guide/eat/lunch/old-mexico.jpg', `Old Mexico enchiladas`, '../locals-guide/old-mexico.html', 4.25, ["lunch", "dinner", "mexican", "suamico", "old mexico"]);
 
 const rAndDs = new lgReview(`R & D's House Divided`, '../img/locals-guide/eat/lunch/r-and-d-house-divided.jpg', `R & D's Italian Beef`, '../locals-guide/r-&-d-house-divided.html', 3.0, ["lunch", "dinner", "green bay", "r and ds house divided", "r and d's house divided", "r & ds house divided", "r & d's house divided"]);
 
@@ -116,7 +114,7 @@ const thePancakePlace = new lgReview(`The Pancake Place`, '../img/locals-guide/e
 
 const zestys = new lgReview(`Zesty's`, '../img/locals-guide/eat/lunch/zestys.jpg', `Zesty's burger with cheesecurds`, '../locals-guide/zestys.html', 4.4, ["lunch", "dinner", "dessert", "howard", "suamico", "allouez", "green bay", "zestys", "zesty's"]);
 
-const content = [_1919Kitchen, aldosPizza, alsHamburger, anduzzis, angelina, basils, bayFamily, blackHoney, blackSheep, brickhouseBurgers, cheeseCakeHeaven, chinaKitchen, copperState, cozumel, driftInn, elMaya, elSarape, fourWayBar, glassNickelPizza, graystoneAleHouse, greenBayDistillery, greenTeaChinese, hagemeisterPark, happyJoes, heartlandPizza, hillTopCafe, jakesPizza, juliesCafe, krolls, legendLarrys, luigisBistro, luigis, macs, narrowBridge, nicoletCafe, notByBreadAlone, oldMexico, rAndDs, rustique, sammysPizza, sarasArtisanGelato, sgambatis, smartCow, stadiumView, tBaconsBbq, theAbbey, theBar, thePancakePlace, zestys]
+const content = [_1919Kitchen, aldosPizza, alsHamburger, anduzzis, angelina, basils, bayFamily, blackHoney, blackSheep, brickhouseBurgers, cheeseCakeHeaven, chinaKitchen, copperState, cozumel, driftInn, elMaya, elSarape, fourWayBar, glassNickelPizza, graystoneAleHouse, greenBayDistillery, greenTeaChinese, hagemeisterPark, happyJoes, hillTopCafe, jakesPizza, juliesCafe, krolls, legendLarrys, luigisBistro, luigis, macs, narrowBridge, nicoletCafe, notByBreadAlone, oldMexico, rAndDs, rustique, sammysPizza, sarasArtisanGelato, sgambatis, smartCow, stadiumView, tBaconsBbq, theAbbey, theBar, thePancakePlace, zestys]
 
 // Generate initial content
 createLocalsGuide(content)
