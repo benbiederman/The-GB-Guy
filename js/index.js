@@ -37,9 +37,9 @@ const thePancakePlace = new lgReview(`The Pancake Place`, '../img/locals-guide/e
 
 const legendLarrys = new lgReview(`Legend Larry's`, '../img/locals-guide/eat/lunch/legend-larrys.jpg', `Legend Larry's wings`, '../locals-guide/legend-larrys.html', 4.75);
 
-const rustique = new lgReview(`Rustique Pizzeria`, '../img/locals-guide/eat/lunch/rustique-pizzeria.jpg', `Rustique pizzas`, '../locals-guide/rustique-pizzeria.html', 4.75);
+const macs = new lgReview(`Macs`, '../img/locals-guide/eat/lunch/macs-mac-n-cheese-shop.jpg', `MACS loaded baked potato mac n cheese`, '../locals-guide/macs.html', 4.5);
 
-const heartlandPizza = new lgReview(`Heartland Pizza`, '../img/locals-guide/eat/lunch/heartland-pizza.jpg', `Heartland pepperoni pizza`, '../locals-guide/heartland-pizza.html', 4.75);
+const rustique = new lgReview(`Rustique Pizzeria`, '../img/locals-guide/eat/lunch/rustique-pizzeria.jpg', `Rustique pizzas`, '../locals-guide/rustique-pizzeria.html', 4.75);
 
 const angelina = new lgReview(`Angelina`, '../img/locals-guide/eat/lunch/angelina.jpg', `Angelina ravioli`, '../locals-guide/angelina.html', 4.75);
 
@@ -49,7 +49,7 @@ const sarasArtisanGelato = new lgReview(`Sara's Artisan Gelato`, '../img/locals-
 const miscGuides = [ticketGuide, hotelGuide, parkingGuide, tailgatingGuide];
 
 //Go-to Items
-const goToItems = [lunaCoffee, blackHoney, thePancakePlace, legendLarrys, rustique, heartlandPizza, angelina, sarasArtisanGelato];
+const goToItems = [lunaCoffee, blackHoney, thePancakePlace, legendLarrys, rustique, angelina, macs, sarasArtisanGelato];
 
 
 generateContent(miscGuides);
