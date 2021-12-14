@@ -71,9 +71,118 @@
         </div>
     </header>
     <main>
+        <!-- Article Review -->
+        <section class="content-article">
+            <figure>
+                <img src="../img/locals-guide/eat/dessert/smart-cow.jpg" alt="Smart Cow frozen yogurt with toppings" />
+            </figure>
+
+            <h1>Smart Cow</h1>
+
+            <p>If you’re looking for a joint to go to where you can tell yourself the dessert is healthy, Smart Cow may
+                be just for you then. Specializing in self-service frozen yogurt, Smart Cow is located just down the
+                road from Lambeau Field, making it a nice pit stop when you’re in the area. Plus, by going to Smart Cow,
+                you’re helping the community as well. Smart Cow gives a percentage of the proceeds to local schools. You
+                can satisfy your sweet tooth and help the local schools, what more could you ask for?</p>
+
+            <h3>What to expect</h3>
+
+            <p>Are you ready to swirl up your own magical concoction consisting of frozen yogurt and other treats? Well,
+                Smart Cow is right up your alley then. It’s a nice family friendly joint to give your kids the freedom
+                to make what they want. They have a nice variety of flavors and extras, and they’re always changing so
+                you don’t get complacent on the options.</p>
+
+            <p>Another really cool thing I like, they’re about more than just donating to local schools. At their
+                location, they have books so you and your kids can read while enjoying your dessert if you’d like to.
+                It’s a place you have to check out at least once, if you haven’t been to a self-service frozen yogurt
+                joint before.</p>
+
+            <div class="content-rating">
+                <p>Rating</p>
+                <p>4.0</p>
+            </div>
+        </section>
+
+        <!-- Tip Section -->
+        <section class="tip">
+            <h4>Want to say thanks for all the helpful content?</h4>
+
+            <button class="secondary-btn" onClick="window.open('https://www.paypal.com/paypalme/thegreenbayguy/5');">Buy
+                me a drink</button>
+        </section>
+
+        <!-- Location Information -->
+        <section class="content-locations">
+            <button class="cycle-btn back-btn"></button>
+            <button class="cycle-btn next-btn"></button>
+
+            <!-- Default Location -->
+            <div class="content-location">
+                <figure>
+                    <img src="../img/locals-guide/location/smart-cow-interior.jpg" alt="Smart Cow interior" />
+                </figure>
+
+                <div class="location-info">
+                    <h1>Smart Cow</h1>
+                    <p>2321 S Oneida St.</p>
+                    <p>Ashwaubenon, WI 54304</p>
 
 
+                    <ul>
+                        <li>Mon: Closed</li>
+                        <li>Tues: 3:00pm - 9:00pm</li>
+                        <li>Wed: 3:00pm - 9:00pm</li>
+                        <li>Thurs: 3:00pm - 9:00pm</li>
+                        <li>Fri: 3:00pm - 9:00pm</li>
+                        <li>Sat: 12:00pm - 9:00pm</li>
+                        <li>Sun: 12:00pm - 9:00pm</li>
+                    </ul>
 
+                    <button class="primary-btn call-btn" onclick="window.location.href = `tel:9208579261`;">(920)
+                        857-9261</button>
+                    <button class="primary-btn website-btn" onClick="window.open('https://smartcowyogurt.com/');">View
+                        Website</button>
+                </div>
+            </div>
+
+            <!-- Second Location -->
+            <div class="content-location">
+                <figure>
+                    <img src="../img/locals-guide/location/smart-cow.jpg" alt="Smart Cow storefront" />
+                </figure>
+
+                <div class="location-info">
+                    <h1>Smart Cow - GB East</h1>
+                    <p>1685 Main St.</p>
+                    <p>Green Bay, WI 54302</p>
+
+
+                    <ul>
+                        <li>Mon: Closed</li>
+                        <li>Tues: 3:00pm - 9:00pm</li>
+                        <li>Wed: 3:00pm - 9:00pm</li>
+                        <li>Thurs: 3:00pm - 9:00pm</li>
+                        <li>Fri: 3:00pm - 9:00pm</li>
+                        <li>Sat: 12:00pm - 9:00pm</li>
+                        <li>Sun: 12:00pm - 9:00pm</li>
+                    </ul>
+
+                    <button class="primary-btn call-btn" onclick="window.location.href = `tel:9208579138`;">(920)
+                        857-9138</button>
+                    <button class="primary-btn website-btn" onClick="window.open('https://smartcowyogurt.com/');">View
+                        Website</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="content-suggestions">
+            <h3>You may also like...</h3>
+            <div class="content-container">
+
+            </div>
+        </section>
     </main>
     <footer>
         <section class="contact">
@@ -114,6 +223,8 @@
         </div>
     </footer>
     <script src="../js/main.js"></script>
+    <script src="../js/eatSuggestion.js"></script>
+    <script src="../js/changeLocation.js"></script>
 </body>
 
 </html>
