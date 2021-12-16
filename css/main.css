@@ -544,7 +544,7 @@ main {
   }
 
   .content-article figure {
-    width: 80%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
   }
@@ -1163,6 +1163,10 @@ main {
     width: 60%;
   }
 
+  .content-article figure {
+    width: 80%;
+  }
+
   .content-article img {
     width: 80%;
   }
@@ -1209,8 +1213,6 @@ main {
   .content-locations {
     padding: 2.5vh 0;
   }
-
-  
 
   .content-location figure {
     width: 40%;
