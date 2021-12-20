@@ -96,7 +96,7 @@ const rustique = new lgReview(`Rustique Pizzeria`, '../img/locals-guide/eat/lunc
 
 const sammysPizza = new lgReview(`Sammy's Pizza`, '../img/locals-guide/eat/lunch/sammys-pizza.jpg', `Sammy's pepperoni pizza`, '../locals-guide/sammys-pizza.html', 4.3, ["lunch", "dinner", "green bay", "sammys pizza", "sammy's pizza", "pizza"]);
 
-const sarasArtisanGelato = new lgReview(`Sara's Artisan Gelato`, '../img/locals-guide/eat/dessert/saras-artisan-gelato.jpg', `Sara's Artisan Gelato over brownie`, '../locals-guide/saras-artisan-gelato.html', 4.75, ["dessert", "green bay", "gelato", "ice cream"]);
+const sarasArtisanGelato = new lgReview(`Sara's Artisan Gelato`, '../img/locals-guide/eat/dessert/saras-artisan-gelato.jpg', `Sara's Artisan Gelato over brownie`, '../locals-guide/saras-artisan-gelato.html', 4.75, ["dessert", "green bay", "gelato", "ice cream", "saras artisan gelato"]);
 
 const sgambatis = new lgReview(`Sgambati's`, '../img/locals-guide/eat/lunch/sgambatis.jpg', `Sgambati's New York Style pepperoni pizza`, '../locals-guide/sgambatis.html', 4.3, ["lunch", "dinner", "de pere", "sgambatis", "sgambati's", "sgambati's new york pizza", "pizza"]);
 

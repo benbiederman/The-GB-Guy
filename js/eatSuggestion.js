@@ -3,7 +3,7 @@ const contentContainer = document.querySelector('.content-container');
 
 // Local's Guide Data
 class lgReview {
-    constructor(name, img, imgDesc, src, rating, searchTerms) {
+    constructor(name, img, imgDesc, src, rating) {
         this.name = name;
         this.img = img;
         this.imgDesc = imgDesc;
