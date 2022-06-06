@@ -1,15 +1,20 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 body {
@@ -28,9 +33,10 @@ main {
   background-color: #000;
 }
 
-@media only screen and (min-width: 100px)  {
+@media only screen and (min-width: 100px) {
   /* Transitions | Mobile */
-  .divider, .alt-divider {
+  .divider,
+  .alt-divider {
     width: 80%;
     height: 2px;
     margin: 2.5vh auto;
@@ -57,7 +63,8 @@ main {
   h4 {
     font-size: 1.5rem;
   }
-  p, li {
+  p,
+  li {
     font-size: 1.25rem;
   }
 
@@ -66,16 +73,17 @@ main {
     cursor: pointer;
   }
 
-  .primary-btn, .secondary-btn {
+  .primary-btn,
+  .secondary-btn {
     min-width: 60%;
-    padding: .5vh 5vw;
+    padding: 0.5vh 5vw;
     border-radius: 5px;
     border: none;
     font-family: "Oswald", sans-serif;
     font-size: 1.5em;
     text-transform: uppercase;
     color: #fcfcfc;
-    transition: color .5s ease;
+    transition: color 0.5s ease;
   }
 
   .primary-btn {
@@ -83,7 +91,7 @@ main {
   }
 
   .primary-btn:hover {
-    color: #18a360
+    color: #18a360;
   }
 
   .secondary-btn {
@@ -94,7 +102,7 @@ main {
     background-color: #111;
   }
 
-    /* Navigation | Mobile */
+  /* Navigation | Mobile */
   .header {
     width: 100%;
     display: flex;
@@ -175,7 +183,7 @@ main {
     margin-right: 1rem;
     cursor: pointer;
     background-color: transparent;
-    border: none; 
+    border: none;
   }
 
   .menu-btn p {
@@ -245,16 +253,16 @@ main {
     margin: 2.5vh auto;
   }
 
-  .copyright p{
+  .copyright p {
     margin-top: 5vh;
     font-size: 1rem;
   }
 
   /* Landing Page | Mobile */
-  .landing-page, .index-landing-gradient {
+  .landing-page,
+  .index-landing-gradient {
     width: 100%;
     height: 92vh;
-    
   }
 
   .landing-page {
@@ -278,11 +286,12 @@ main {
     position: absolute;
     left: 0;
     top: 0;
-    background-image:linear-gradient(to bottom, transparent 70%, #000);
+    background-image: linear-gradient(to bottom, transparent 70%, #000);
     pointer-events: none;
   }
 
-  .index-landing h2, .index-landing p {
+  .index-landing h2,
+  .index-landing p {
     text-shadow: 0 0 8px #000;
   }
 
@@ -359,7 +368,7 @@ main {
 
   .content-item:hover {
     transform: scale(1.01);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, .6)
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
   }
 
   .content-item:hover p:last-of-type {
@@ -488,7 +497,7 @@ main {
 
   .search-input {
     width: 85%;
-    padding: .5vh 2vw;
+    padding: 0.5vh 2vw;
     height: 5vh;
     border: none;
     border-radius: 5px 0 0 5px;
@@ -592,13 +601,13 @@ main {
   .content-article a:hover {
     color: #18a360;
   }
- 
+
   .content-rating {
     background-color: #000;
     min-height: 5vw;
     min-width: 5vw;
     display: inline-block;
-    padding: .5vh 2vw;
+    padding: 0.5vh 2vw;
     border-radius: 5px;
     margin-top: 3.75vh;
     box-shadow: 0px 0px 10px #111;
@@ -624,7 +633,7 @@ main {
   }
 
   .gold-rating p:last-child {
-    color: #BD8B28;
+    color: #bd8b28;
   }
 
   .gold-rating {
@@ -634,7 +643,6 @@ main {
   .content-article audio {
     width: 60%;
   }
-
 
   .tip {
     width: 100%;
@@ -663,7 +671,7 @@ main {
     min-width: 7.5vw;
     height: 10vh;
     font-size: 2rem;
-    padding: 1vh .5vw;
+    padding: 1vh 0.5vw;
     background-color: #000;
     color: #fcfcfc;
     border: none;
@@ -721,7 +729,6 @@ main {
     text-align: center;
   }
 
-
   /* No Search Results - Mobile */
   .null-search {
     width: 80%;
@@ -744,18 +751,13 @@ main {
   .null-search p:last-child {
     text-align: center;
   }
-
-
 }
-
-
-
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-
   /* Transitions | Tablet */
-  .divider, .alt-divider {
+  .divider,
+  .alt-divider {
     width: 60%;
   }
 
@@ -776,18 +778,19 @@ main {
     font-size: 2rem;
   }
 
-  p, li {
+  p,
+  li {
     font-size: 1.25rem;
   }
 
   /* Buttons | Tablet */
-  .primary-btn, .secondary-btn {
+  .primary-btn,
+  .secondary-btn {
     min-width: 40%;
-    padding: .5vh 2vw;
+    padding: 0.5vh 2vw;
   }
 
-
-    /* Navigation - Tablet */
+  /* Navigation - Tablet */
   .logo {
     margin-left: 5rem;
   }
@@ -801,7 +804,8 @@ main {
   }
 
   /* Landing Page | Tablet */
-  .landing-page, .index-landing-gradient {
+  .landing-page,
+  .index-landing-gradient {
     height: 60vh;
   }
 
@@ -820,7 +824,7 @@ main {
     width: 70%;
   }
 
-  .copyright p{
+  .copyright p {
     font-size: 1.25rem;
   }
 
@@ -849,7 +853,7 @@ main {
   }
 
   /* Local's Guide | Tablet */
-    .lg-option {
+  .lg-option {
     width: 97.5%;
     min-height: 21.25vh;
   }
@@ -863,83 +867,79 @@ main {
   }
 
   /* Article - Tablet */
-    .content-article {
-      width: 60%;
-    }
-  
-    .tip {
-      padding: 5vh 10%;
-    }
+  .content-article {
+    width: 60%;
+  }
 
-    .cycle-btn {
-      min-width: 5vw;
-      top: 40%;
-      height: 10vh;
-      font-size: 2rem;
-    }
-  
-    .back-btn {
-      left: 5vw;
-    }
-  
-    .next-btn {
-      right: 5vw;
-    }
-  
-    .content-location figure {
-      width: 50%;
-      margin: 0 auto;
-    }
+  .tip {
+    padding: 5vh 10%;
+  }
 
-    .location-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-  
-    .content-location h1 {
-      font-size: 2.0rem;
-    }
+  .cycle-btn {
+    min-width: 5vw;
+    top: 40%;
+    height: 10vh;
+    font-size: 2rem;
+  }
 
-    .content-location p {
-      font-size: 1.5rem;
-    }
-  
-    .content-location ul {
-      padding: 2.5vh 0;
-    }
+  .back-btn {
+    left: 5vw;
+  }
 
-    .content-location li {
-      font-size: 1.5rem;
-    }
-  
-    .content-suggestions {
-      text-align: center;
-    }
+  .next-btn {
+    right: 5vw;
+  }
 
+  .content-location figure {
+    width: 50%;
+    margin: 0 auto;
+  }
 
-   /* No Search Results - Tablet */
-   .null-search {
+  .location-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .content-location h1 {
+    font-size: 2rem;
+  }
+
+  .content-location p {
+    font-size: 1.5rem;
+  }
+
+  .content-location ul {
+    padding: 2.5vh 0;
+  }
+
+  .content-location li {
+    font-size: 1.5rem;
+  }
+
+  .content-suggestions {
+    text-align: center;
+  }
+
+  /* No Search Results - Tablet */
+  .null-search {
     width: 60%;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
- 
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .content-rating {
     min-height: 5vw;
     min-width: 5vw;
   }
 }
 
-
-
-
 /* Desktop */
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
   /* Transitions | Desktop */
-  .divider, .alt-divider {
+  .divider,
+  .alt-divider {
     width: 40%;
     margin: 5vh auto 5vh auto;
   }
@@ -961,18 +961,20 @@ main {
     font-size: 1.5rem;
   }
 
-  p, li {
+  p,
+  li {
     font-size: 1.1rem;
     font-weight: 300;
   }
 
-/* Buttons | Desktop */
-  .primary-btn, .secondary-btn {
+  /* Buttons | Desktop */
+  .primary-btn,
+  .secondary-btn {
     min-width: 25%;
     padding: 0.5vh 2.5vw;
   }
 
-/* Navigation | Desktop */
+  /* Navigation | Desktop */
   .header {
     min-height: 10vh;
   }
@@ -995,10 +997,10 @@ main {
   }
 
   .socials img {
-    width: 2vw;
+    width: 1.5vw;
     object-fit: contain;
     transition: all 0.5s ease;
-    margin: 0 .25vw;
+    margin: 0 0.25vw;
   }
 
   .socials img:hover {
@@ -1059,13 +1061,14 @@ main {
     margin: 2.5vh auto;
   }
 
-  .copyright p{
+  .copyright p {
     margin-top: 5vh;
     font-size: 1rem;
   }
 
   /* Landing Page */
-  .landing-page, .index-landing-gradient  {
+  .landing-page,
+  .index-landing-gradient {
     height: 100vh;
   }
 
@@ -1074,7 +1077,8 @@ main {
   }
 
   /* Landing Page | Desktop */
-  .landing-page, .index-landing-gradient {
+  .landing-page,
+  .index-landing-gradient {
     height: 100vh;
   }
 
@@ -1130,7 +1134,7 @@ main {
     align-items: center;
     justify-content: center;
     margin-right: 10%;
-  } 
+  }
 
   /* Local's Guide | Desktop */
   .lg-options {
@@ -1153,7 +1157,7 @@ main {
 
   .search-input {
     width: 90%;
-    padding: .5vh .5vw;
+    padding: 0.5vh 0.5vw;
   }
 
   .x-btn {
@@ -1258,8 +1262,8 @@ main {
     align-items: center;
   }
 
-   /* No Search Results - Desktop */
-   .null-search {
+  /* No Search Results - Desktop */
+  .null-search {
     width: 50%;
   }
 
@@ -1271,6 +1275,8 @@ main {
     font-size: 3.5rem;
   }
 
-  
-  
+  /* Footer - Desktop */
+  footer .secondary-btn {
+    min-width: 15%;
+  }
 }
